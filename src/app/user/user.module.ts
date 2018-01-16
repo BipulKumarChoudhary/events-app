@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile/profile.component';
 import { userRoutes } from './user.route';
 import { LoginComponent } from './login/login.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { FormsModule } from '@angular/forms'
   imports: [
     CommonModule, 
     RouterModule.forChild(userRoutes),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: []
 })
