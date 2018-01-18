@@ -27,6 +27,11 @@ export class EventService {
     EVENTS.push(event);
   }
 
+  updateEvent(event){
+    let index = EVENTS.findIndex(x=> x.id == event.id);
+    EVENTS[index] = event;
+  }
+
 }
 const EVENTS : IEvent[] = [
   {
@@ -35,7 +40,7 @@ const EVENTS : IEvent[] = [
     date: new Date('12/19/2017'),
     time: '12:00 pm',
     price: 100,
-    imageUrl: 'app/assets/angular.png',
+    imageUrl: './assets/angular.png',
     location: {
       address: '50 Prospect Street',
       city: 'Hartford',
@@ -98,7 +103,7 @@ const EVENTS : IEvent[] = [
     date: new Date('4/15/2037'),
     time: '9:00 am',
     price: 950.00,
-    imageUrl: '/app/assets/angular.png',
+    imageUrl: './assets/angular.png',
     onlineUrl: 'www.learning.travelers.com',
     sessions: [
       {
@@ -154,7 +159,7 @@ const EVENTS : IEvent[] = [
     date: new Date('5/4/2037'),
     time: '9:00 am',
     price: 759.00,
-    imageUrl: '/app/assets/angular.png',
+    imageUrl: './assets/angular.png',
     location: {
       address: 'The Palatial America Hotel',
       city: 'Salt Lake City',
@@ -236,7 +241,7 @@ const EVENTS : IEvent[] = [
     date: new Date('6/10/2037'),
     time: '8:00 am',
     price: 800.00,
-    imageUrl: '/app/assets/angular.png',
+    imageUrl: './assets/angular.png',
     location: {
       address: 'The UN Angular Center',
       city: 'New York',
@@ -285,7 +290,7 @@ const EVENTS : IEvent[] = [
     date: new Date('2/10/2037'),
     time: '9:00 am',
     price: 400.00,
-     imageUrl: '/src/assets/angular.png',
+     imageUrl: './assets/angular.png',
     location: {
       address: 'Waikiki Beach',
       city: 'Hawaii',
