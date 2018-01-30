@@ -39,7 +39,7 @@ const EVENTS : IEvent[] = [
     name: 'Angular Learning Session',
     date: new Date('12/19/2017'),
     time: '12:00 pm',
-    price: 100,
+    price: 99.99,
     imageUrl: './assets/angular.png',
     location: {
       address: '50 Prospect Street',
