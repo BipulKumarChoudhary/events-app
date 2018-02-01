@@ -72,7 +72,7 @@ const EVENTS : IEvent[] = [
         name: "Components, Templates, Services",
         presenter: "Bipul Kumar",
         duration: 1,
-        level: "Intermediate",
+        level: "Beginner",
         abstract: `Deepdive into Angular Application Component Structure and 
         Hierarchy, Interpolation, Expression, Events, Statements, Services`,
         voters: []
